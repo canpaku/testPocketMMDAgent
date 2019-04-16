@@ -149,7 +149,8 @@
 14   15   <eps>                               STAGE|Stage\building2\floor.bmp,Stage\building2\background.bmp
 15   16   <eps>                               MOTION_ADD|mei|base|Motion\mei_wait\mei_wait.vmd|FULL|LOOP|ON|OFF
 16   17   <eps>                               TIMER_START|bootscreen|1.5
-17   2    TIMER_EVENT_STOP|bootscreen         MODEL_DELETE|bootscreen
+17   18   <eps>				      LOG_START
+18   2    TIMER_EVENT_STOP|bootscreen         MODEL_DELETE|bootscreen
 
 # 0021-0030 Idle behavior
 
@@ -160,6 +161,8 @@
 1    1    RECOG_EVENT_START                   MOTION_ADD|mei|listen|Expression\mei_listen\mei_listen.vmd|PART|ONCE
 1    1    TIMER_EVENT_STOP|idle1              MOTION_ADD|mei|idle|Motion\mei_idle\mei_idle_boredom.vmd|PART|ONCE
 1    1    TIMER_EVENT_STOP|idle2              MOTION_ADD|mei|idle|Motion\mei_idle\mei_idle_touch_clothes.vmd|PART|ONCE
+1    1    <eps>                              LOG_FINISH
+1    1    <eps>                              LOG_UPLOAD
 1    2    TIMER_EVENT_STOP|idle3              MOTION_ADD|mei|idle|Motion\mei_idle\mei_idle_think.vmd|PART|ONCE
 
 # 0031-0040 Hello

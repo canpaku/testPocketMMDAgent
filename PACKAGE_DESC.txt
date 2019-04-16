@@ -2,3 +2,11 @@ name = test
 image = null
 readme = README.txt
 readmeForceAgreement = true
+# ログファイルをアップロード(POST)するURL
+logUploadURL=http://localhost:8080/logs
+# アップロードにつかうHTTPのバージョン文字列（無指定時は HTTP/1.1）
+#LogUploadHTTPVersion=HTTP/1.0
+# 入力音声データも収集する
+#logSpeechInput=true
+# ログ識別子（システムバージョン等を指定、なしの場合 "noId" になる）
+logIdentifier=sysver1.0
