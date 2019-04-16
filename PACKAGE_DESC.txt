@@ -1,3 +1,4 @@
-name=test
-readme=README.txt
-readmeForceAgreement=true
+name = test
+image = null
+readme = README.txt
+readmeForceAgreement = true
